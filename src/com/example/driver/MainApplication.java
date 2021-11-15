@@ -9,8 +9,8 @@ public class MainApplication {
     public static void main(String[] args) {
 
         Employee e1 = new Contractual("Ram", "001", 1000L);
-        Employee e2 = new FullTime("Shyam", "001", 1000L);
-        Employee e3 = new Intern("Hari", "001", 1000L);
+        Employee e2 = new FullTime("Shyam", "002", 2000L);
+        Employee e3 = new Intern("Hari", "003", 500L);
 
         System.out.println(e1.calculateTax());
         System.out.println(e2.calculateTax());
