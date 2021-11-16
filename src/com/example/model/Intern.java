@@ -1,13 +1,16 @@
 package com.example.model;
 
-public class Intern extends Employee implements TaxCalculation {
+public class Intern extends Employee {
 
-    public Intern(String name, String empId, long salary) {
+    TaxCalculation taxCalculation;
+
+    public Intern(String name, String empId, long salary, TaxCalculation taxCalculation) {
         super(name, empId, salary);
+        this.taxCalculation = taxCalculation;
     }
 
-    @Override
     public double calculateTax() {
-        return 0.2*this.getSalary();
+        return taxCalculation.calculateTax(this.getSalary());
     }
+
 }
