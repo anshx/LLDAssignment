@@ -16,7 +16,5 @@ public class MainApplication {
         System.out.println(e2.calculateTax());
         System.out.println(e3.calculateTax());
 
-        System.out.println("Adding something garbabge");
-
     }
 }
