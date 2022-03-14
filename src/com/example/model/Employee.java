@@ -1,6 +1,6 @@
 package com.example.model;
 
-public abstract class Employee {
+public abstract class Employee implements TaxCalculation {
     private String name;
     private String empId;
     private long salary;
@@ -22,7 +22,4 @@ public abstract class Employee {
     public long getSalary() {
         return salary;
     }
-
-    public abstract double calculateTax();
-
 }
